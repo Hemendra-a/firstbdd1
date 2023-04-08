@@ -12,7 +12,6 @@ public class StepDefination {
     @When("^user enters (.*) application*")
     public void openApplication(String application) {
     	System.out.println("In openApplication,application is :"+application);
-    	System.out.println("merge develop with master");
     	
     }
 
