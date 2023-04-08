@@ -33,6 +33,7 @@ public class SDLoginpage {
 		 driver.findElement(By.name("user-name")).sendKeys(username);
 		 driver.findElement(By.name("password")).sendKeys(password);
 		 System.out.println("_____file has been updated_________");
+		 System.out.println("_____file has been updated1_________");
 	}
 
 	@And("user clicks on login")
