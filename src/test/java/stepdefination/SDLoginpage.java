@@ -43,6 +43,7 @@ public class SDLoginpage {
 	public void user_clicks_on_login() {
 		 driver.findElement(By.name("login-button")).click();
 		 System.out.println("_____push change in develop_________");
+		 System.out.println("_____merge with master_________");
 	}
 
 	@Then("user is navigated to the homepage")
