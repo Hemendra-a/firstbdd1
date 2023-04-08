@@ -36,12 +36,13 @@ public class SDLoginpage {
 		 System.out.println("_____file has been updated1_________");
 		 System.out.println("_____file has been updated2_________");
 		 System.out.println("_____file has been updated3_________");
+		 System.out.println("_____create new branch develop_________");
 	}
 
 	@And("user clicks on login")
 	public void user_clicks_on_login() {
 		 driver.findElement(By.name("login-button")).click();
-	
+		 System.out.println("_____push change in develop_________");
 	}
 
 	@Then("user is navigated to the homepage")
