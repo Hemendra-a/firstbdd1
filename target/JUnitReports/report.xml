@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="82.408">
+    <testcase classname="Test Google Application Functionality" name="Test Google Home Page Functionality" time="0.098">
+        <system-out><![CDATA[Given The user has opened "chrome" browser..................................passed
+When user enters "https://www.google.com/" application......................passed
+Then user asserts that the page title is "Google"...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test github functionality" name="Check github functionality with valid credentials" time="19.162">
+        <failure message="Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given getLaunchgithub.......................................................passed
+And user is on github login page............................................passed
+When user enters login credential...........................................failed
+And user clickonsigninbutton................................................skipped
+Then user is navigated to the homepage and perform other action.............skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isEnabled(Unknown Source)
+	at page.Login_page1.clickonsign(Login_page.java:28)
+	at page.Login_page.clickonsign(Login_page.java:54)
+	at stepdefination.Githubdemo.user_enters_login_credential(Githubdemo.java:27)
+	at ✽.user enters login credential(file:///D:/eclipse-workspace/Bddcucumber/Featurefiles/GoogleGithub.feature:25)
+]]></failure>
+    </testcase>
+    <testcase classname="Test login functionality" name="Check login is successful with valid credentials" time="14.551">
+        <system-out><![CDATA[Given browsers is open......................................................passed
+And user is on login page...................................................passed
+When user entersstandard_userandsecret_sauce................................passed
+And user clicks on login....................................................passed
+Then user is navigated to the homepage......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test login functionality" name="Check login is successful with valid credentials 2" time="11.158">
+        <system-out><![CDATA[Given browsers is open......................................................passed
+And user is on login page...................................................passed
+When user entersproblem_userandsecret_sauce.................................passed
+And user clicks on login....................................................passed
+Then user is navigated to the homepage......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test login functionality" name="Check login is successful with valid credentials 3" time="13.193">
+        <system-out><![CDATA[Given browsers is open......................................................passed
+And user is on login page...................................................passed
+When user entersperformance_glitch_userandsecret_sauce......................passed
+And user clicks on login....................................................passed
+Then user is navigated to the homepage......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="check google search functionality" name="validate google search is working" time="23.446">
+        <system-out><![CDATA[Given browser is open.......................................................passed
+And user is on google search page...........................................passed
+When user enters a text in google search box................................passed
+And hit enters..............................................................passed
+Then user navigate to the search result page................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
